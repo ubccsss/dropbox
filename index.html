@@ -1,0 +1,46 @@
+<head>
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+  <style>
+  body{
+    color:#495057;
+    font-family:-apple-system,BlinkMacSystemFont,Lato,"Segoe UI",Verdana,Arial,sans-serif;
+    font-size:14px;
+    line-height:1.5;
+    letter-spacing:0;
+    -webkit-text-size-adjust:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1 {
+    margin:0 0 40px 0;font-weight:600;color:#495057;font-size:36px;line-height:1.2}
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .msg {
+    background-color: #94d82d;
+    border-radius: 3px;
+  }
+  body > div {
+    max-width: 500px;
+  }
+  </style>
+  <title>Tristan Rice's Drop Box</title>
+</head>
+
+<div>
+  <h1>Tristan Rice's Drop Box</h1>
+
+  <p class="msg">{{.}}</p>
+
+  <p>You can securely upload files here directly to my CS undergrad account.</p>
+
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Upload">
+  </form>
+</div>
